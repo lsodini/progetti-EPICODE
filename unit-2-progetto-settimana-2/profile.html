@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/profile.css">
+</head>
+<body class="profile-body">
+    <nav class="navbar navbar-light">
+        <a class="navbar-brand" href="#">
+            <img src="assets/netflix_logo.png" alt="Netflix Logo" class="nav-logo">
+        </a>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card card-custom">
+                    <div class="card-body">
+                        <!-- Edit Profile -->
+                        <div class="mb-4">
+                            <h1>Edit Profile</h1>
+                            <hr>
+                        </div>
+
+                        <div class="profile-container">
+                            <!-- Image and Badge -->
+                            <div class="profile-badge">
+                                <img src="assets/avatar.png" class="profile-image rounded" alt="Profile Image">
+                                <span class="badge-icon"><i class="fas fa-pencil-alt"></i></span>
+                            </div>
+                            <!-- Placeholder and Options -->
+                            <div class="profile-content">
+                                <div class="d-flex align-items-center">
+                                    <div class="placeholder">Strive Student</div>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <label for="languageSelect">Language:</label>
+                                    <select class="custom-select" id="languageSelect">
+                                        <option selected>English</option>
+                                        <option value="1">Spanish</option>
+                                        <option value="2">French</option>
+                                        <option value="3">German</option>
+                                        <option value="4">Italian</option>
+                                    </select>
+                                </div>
+                                <hr>
+                                <!-- Maturity Settings -->
+                                <div class="mt-3">
+                                    <label>Maturity Settings:</label>
+                                    <button class="btn btn-custom w-70">ALL MATURITY RATINGS</button>
+                                    <small class="form-text text-muted">Show titles of all maturity ratings for this profile.</small>
+                                    <button class="btn btn-custom-outline mt-2">EDIT</button>
+                                </div>
+                                <hr>
+                                <!-- Autoplay Controls -->
+                                <div class="mt-3">
+                                    <label>Autoplay Controls:</label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="autoplayNextEpisode">
+                                        <label class="form-check-label checkbox-label" for="autoplayNextEpisode"><span>
+                                            Autoplay next episode in a series on all devices
+                                        </span></label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="autoplayPreviews">
+                                        <label class="form-check-label checkbox-label" for="autoplayPreviews"><span>
+                                            Autoplay previews while browsing on all devices
+                                        </span></label>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+
+                        <div class="row mt-4">
+                            <!-- Buttons -->
+                            <div class="col-12 text-center">
+                                <button class="btn btn-custom mb-2">SAVE</button>
+                                <button class="btn btn-custom-outline mb-2">CANCEL</button>
+                                <button class="btn btn-custom-outline mb-2">DELETE PROFILE</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/b9d3fe47c6.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	line-height: 1.65;
+	font-size: 1.2rem;
+	color: #393d41;
+}
+
+header {
+	background-color: black;
+
+}
+
+.logo {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.logo img {
+	width: 50%;
+	padding: 2rem;
+	margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	line-height: 1;
+	color: #25a2c3;
+}
+
+.corso {
+	height: auto;
+	background-size:110% ;
+	background-image: url('../images/banner.jpg');
+	
+}
+
+.corso button,
+.corso button a,
+.corso button a:visited,
+.corso button a:link {
+	background-color: #f04c2f;
+	font-weight: bold;
+	padding: 1rem 1.4rem;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	text-decoration: none;
+	margin: 0 auto 2rem auto;
+
+}
+
+.corso h1 {
+	padding-top: 9%;
+	max-width: auto;
+	margin: 0 auto 1.3rem auto;
+}
+
+.corso p {
+	max-width: 400px;
+	margin: 0 auto 2.7rem auto;
+}
+
+.promo h4 {
+	padding-top: 3%;
+	max-width: 400px;
+	margin: 1rem auto 1rem auto;
+}
+
+.promo p {
+	max-width: 350px;
+	margin: 0 auto 1.3rem auto;
+}
+
+.promo img {
+	border-radius: 50%;
+	width: 70%;
+}
+
+.cite blockquote {
+	max-height: 400px;
+	background-color: #e22d0e;
+	padding-bottom: 10%;
+}
+
+.cite h2 {
+	padding-top: 15%;
+	margin: 0 auto;
+	font-size: 2.5rem;
+	color: white;
+
+}
+
+.cite blockquote p,
+.cite blockquote cite {
+	padding-top: 7%;
+	max-width: 400px;
+	margin: 0 auto;
+	color: white;
+}
+
+.cite blockquote cite span {
+	font-size: 1.6rem;
+	font-style: normal;
+}
+
+.cite blockquote cite {
+	font-style: normal;
+}
+
+.seemore article {
+	border: 2px solid #dee1e3;
+	height: auto;
+	margin: 10% auto;
+	width: 90%;
+}
+
+.seemore article h4 {
+	padding-top: 4%;
+	padding-bottom: 4%;
+	margin: 0 auto;
+}
+
+.seemore article p {
+	padding-bottom: 10%;
+	max-width: 350px;
+	margin: 0 auto;
+}
+
+.img1 img,
+.img2 img,
+.img3 img {
+	width: 100%;
+}
+
+footer {
+	background-color: #25a2c3;
+	color: #c8e7f0;
+	max-height: auto;
+	margin-top: 15%;
+	padding-bottom: 10%;
+
+}
+
+footer h2 {
+	padding-top: 10%;
+	padding-bottom: 5%;
+	margin: 0 auto;
+	color: white;
+	font-size: 2.5rem;
+}
+
+footer p {
+	
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+footer hr {
+	width: 50%;
+	margin: 0 auto;
+	border: 1px solid white;
+	margin-top:5%;
+}
+
+.copy {
+	padding-top: 6%;
+}
+
+footer a,
+footer a:visited,
+footer a:link {
+	color: #c8e7f0;
+}
+
+footer span {
+	color: white;
+}

@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #ffc017;
+    border-bottom: 1px solid #191919;
+}
+
+#myNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 150px;
+    border-bottom: 1px solid #191919;
+    position: sticky;
+	top:0;
+	z-index: 5;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    vertical-align: middle;
+}
+
+nav .menu {
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 30px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #191919;
+}
+
+a.pill {
+    background-color: #191919;
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.intro {
+    display: flex;
+}
+
+.title {
+    margin: 50px 150px;
+    margin-bottom: 100px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title h1 {
+    font-size: 5em;
+    font-weight: 500;
+    font-family: 'Spectral', serif;
+    margin: 0;
+    letter-spacing: -5px;
+}
+
+.title span {
+    white-space: nowrap;
+}
+
+.title p {
+    margin-top: -10px;
+    margin-bottom: 40px;
+}
+
+.title a.pill {
+    padding: 8px 40px;
+    border-radius: 20px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.artwork {
+    width: 50%;
+}
+
+/*********************main**********************/
+
+.trending-title {
+    margin: 20px 0 0 150px;
+    display: flex;
+}
+
+.trending-title img {
+    margin-right: 10px;
+    font-size: 0.7em;
+}
+
+.post-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 150px 20px 150px;
+    padding-left: 0;
+}
+
+.post-list li {
+    counter-increment: post-counter;
+    list-style: none;
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 55px;
+    
+    flex-basis: 25%;
+}
+
+.post-list li::before {
+    content: counter(post-counter, decimal-leading-zero);
+    /* Utilizza decimal-leading-zero per aggiungere lo zero */
+    font-size: 2em;
+    font-weight: bold;
+    color: #9f9d9d6d;
+    position: absolute;
+    /* Posiziona il counter in modo assoluto */
+    left: 0px;
+    /* Posiziona il counter a sinistra */
+    top: -5px;
+    /* Allinea il counter in cima */
+}
+
+.post .author-name {
+    display: flex;
+    align-items: center;
+}
+
+.post .author-name img {
+    width: 30px;
+    /* Dimensione immagine autore */
+    height: 30px;
+    /* Dimensione immagine autore */
+    border-radius: 50%;
+    /* Bordi arrotondati per l'immagine */
+    margin-right: 10px;
+    /* Spazio tra l'immagine e il testo */
+}
+
+.post .post-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.post h2.post-title {
+    font-size: 1.2em;
+    /* Dimensione titolo */
+    margin: 5px 0;
+    /* Margini del titolo */
+}
+
+.post .post-meta {
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
+    /* Dimensione meta dati */
+    color: #666;
+    /* Colore meta dati */
+}
+
+.post-meta .date {
+    margin-right: 5px;
+    /* Aggiusta il margine destro della data */
+}
+
+.post-meta .dot {
+    margin-left: 0;
+    /* Rimuovi il margine sinistro del punto */
+    margin-right: 10px;
+    /* Aggiusta il margine destro del punto */
+}
+
+.post .author-name .squareimg {
+    border-radius: 25%;
+}
+
+.star {
+    padding-left: 5px;
+}
+
+.post-trending {
+    border-bottom: 1px solid #c4c4c451;
+}
+
+.post2 {
+    display: flex;
+    width: 75%;
+    height: 100%;
+    
+    /* Allinea i contenuti in alto */
+    margin-bottom: 20px;
+    /* Margine inferiore per distanziare i post */
+}
+.post-info2{
+	width: 100%;
+}
+
+
+
+.post-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.post-list2 {
+	flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 50px 20px 150px;
+    padding-left: 0;
+    padding-top: 70px;
+}
+
+.post-list2 li {
+    list-style: none;
+    margin-bottom: 30px;
+	width: 100%;
+	display: flex;
+    justify-content: space-between;
+}
+
+.post2 .author-name img {
+    width: 30px;
+    /* Dimensione immagine autore */
+    height: 30px;
+    /* Dimensione immagine autore */
+    border-radius: 50%;
+    /* Bordi arrotondati per l'immagine */
+    margin-right: 10px;
+    /* Spazio tra l'immagine e il testo */
+}
+.post2 .author-name {
+    display: flex;
+    align-items: center;
+}
+
+
+.post-image {
+    position: relative;
+    /* Per gestire il flusso inline dei contenuti */
+	width: 100%;
+	/* Occupa il 25% della larghezza */
+	height: 100%;
+	/* Occupa tutta l'altezza disponibile */
+
+	
+}
+
+.post-image .bookmark {
+    position: absolute;
+    /* Posizionamento assoluto all'interno di .post-image */
+    bottom: 30px;
+    /* Posiziona l'SVG 5px dal basso */
+    left: 20px;
+    /* Posiziona l'SVG 5px dalla sinistra */
+    width: 20px;
+    /* Dimensione dell'SVG, regola la dimensione secondo necessità */
+    height: auto;
+    /* Altezza automatica per mantenere l'aspetto proporzionato */
+}
+
+.postimg {
+    width: 100%;
+    /* Occupa tutta la larghezza disponibile */
+    height: 100%;
+    /* Occupa tutta l'altezza disponibile */
+    object-fit: cover;
+	padding-left:100px
+	
+
+}
+.post2 .post-meta {
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
+    /* Dimensione meta dati */
+    color: #666;
+    /* Colore meta dati */
+}
+.pill2{
+    background-color: #c4c4c45b;
+    text-align: center;
+    padding: 8px 8px;
+    border-radius: 20px;
+    font-weight: 300;
+}
+.discover {
+    flex: 0 0 20%; /* Occupa il 25% della larghezza, non può crescere né rimpicciolire */
+    padding: 0 20px; /* Padding per separare dal bordo destro */
+	margin-right: 150px
+}
+
+.discover-section {
+    margin-bottom: 20px;
+}
+
+.discover-section h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.discover-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Spazio tra i bottoni */
+}
+
+.discover-buttons button {
+    border: 1px solid #acacac9e;
+    background: none;
+    padding: 10px 20px;
+  color:#acacac9e
+}
+
+
+
+hr {
+    border: 0;
+    border-top: 1px solid #c4c4c4;
+    margin: 20px 0;
+}
+
+.discover-menu {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+	
+	color: #acacac9e;
+    gap: 20px; /* Spazio tra gli elementi del menu */
+}
+
+.discover-menu li {
+    cursor: pointer;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+.discover-menu li:hover {
+    color: #191919;
+}
+.main-content {
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,115 @@
+.profile-badge {
+	position: relative;
+	display: inline-block;
+}
+.badge-icon {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: white;
+	border-radius: 50%;
+	padding: 5px;
+	color: black;
+}
+.profile-image {
+	width: 140px;
+	height: 140px;
+	object-fit: cover;
+	margin-top: 10px;
+}
+.placeholder {
+	background: #666666;
+	padding: 10px;
+	margin-top: 10px;
+	width: 300px;
+}
+.btn-custom {
+	border: 1px solid #fff;
+	background: #000;
+	color: #fff;
+	border-radius: 0; /* Rimosso il border-radius */
+}
+.btn-custom-outline {
+	border: 1px solid #fff;
+	color: #fff;
+	background: transparent;
+	border-radius: 0; /* Rimosso il border-radius */
+}
+.btn-custom-outline:hover {
+	color: #000;
+	background: #fff;
+}
+.checkbox-label {
+	display: block;
+	color: #fff;
+}
+.card-custom {
+	width: 100%;
+	max-width: 600px; /* Limita la larghezza della card */
+	margin: 0 auto;
+	padding: 20px;
+	background: #000;
+	color: #fff;
+}
+.profile-container {
+	display: flex;
+	align-items: flex-start;
+}
+.profile-content {
+	margin-left: 20px;
+}
+.nav-logo {
+	height: 40px;
+}
+.profile-body {
+	background: #000;
+	color: #fff;
+}
+.profile-body hr {
+	border-top: 1px solid #fff; /* Cambia il colore dell'hr */
+}
+.custom-select {
+	background-color: #000;
+	color: #fff;
+	border: 1px solid #fff;
+	border-radius: 0;
+	width: 150px; /* Ridotto ulteriormente */
+}
+.custom-select option {
+	background-color: #000;
+	color: #fff;
+}
+.form-check-input {
+	width: 1.5rem;
+	height: 1.5rem;
+	border: 2px solid #fff;
+	background-color: #000; /* Sfondo nero per la checkbox */
+}
+.form-check-input:checked {
+	background-color: #000;
+	border-color: #fff;
+}
+.form-check {
+	margin-bottom: 1rem; /* Aumenta lo spazio tra la checkbox e il testo */
+}
+.btn-custom {
+	width: auto; /* Rende il bottone più corto */
+	margin-right: 0.5rem; /* Spazio tra i bottoni */
+}
+.btn-custom-outline {
+	width: auto; /* Rende il bottone più corto */
+	margin-right: 0.5rem; /* Spazio tra i bottoni */
+}
+.btn-custom.w-70 {
+   
+	background-color: #000;
+	color: #fff;
+}
+.btn-custom.w-70:hover {
+	color: #fff;
+	background: #000;
+}
+span{
+	padding-left:15px;
+	white-space: nowrap;
+}
